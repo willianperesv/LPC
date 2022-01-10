@@ -1,0 +1,98 @@
+html, body {
+    height: 100%;
+  }
+  
+  .wrap {
+    margin-top:30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button {
+    margin-top:1px;
+    margin-bottom:1px;
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.486);
+    min-width: 160px;
+    min-height: 35px;
+    font-family: var(--titulos);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 700;
+    color: var(--cor5);
+    background: #4FD1C5;
+    background: linear-gradient(90deg, rgba(218, 228, 85, 0.767) 0%, rgb(209, 207, 79) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(94, 209, 79, 0.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+  
+  button::before {
+  content: '';
+    border-radius: 1000px;
+    min-width: calc(160px + 12px);
+    min-height: calc(31px + 12px);
+    border: 4px solid #eeff00;
+    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .button:hover, .button:focus {
+    color: #313133;
+    transform: translateY(-2px);
+  }
+  
+  button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 3px solid var(--cor6);
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 100px;
+      height: 100px;
+      opacity: 0;
+    }
+  }
+  @media screen and(max-width: 600px ) {
+    @media screen and(max-width:600px ){
+      .button{
+      font-size:10px;
+    }
+    }
+   
+  }

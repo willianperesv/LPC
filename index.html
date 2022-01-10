@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid Price Converter</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="jQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/buttons.css">
+
+</head>
+<body>
+   <header>
+
+   </header> 
+   <div class="logo">
+    <picture class="massa">
+     <source media="(max-width:600px )" srcset="images/massaright-80.png" type="image/png">
+     <source media="(max-width:758px )" srcset="images/massaright-130.png" type="image/png">
+     <source media="(max-width:1100px )" srcset="images/massaright-200.png" type="image/png">
+        <img src="images/massaright-200.png" alt="Luciano">
+ </picture>
+    <picture>
+        <source media="(max-width:600px )" srcset="images/Liquid-price-converter-100n.png" type="image/png">
+        <source media="(max-width:758px )" srcset="images/Liquid-price-converter-190.png" type="image/png">
+        <source media="(max-width:1100px )" srcset="images/Liquid-price-converter-290.png" type="image/png">
+        <img src="images/Liquid-price-converter-290.png" alt="logo">
+    </picture>
+    <picture class="massa">
+        <source media="(max-width:600px )" srcset="images/massaleft-80.png" type="image/png">
+        <source media="(max-width:758px )" srcset="images/massaleft-130.png" type="image/png">
+        <source media="(max-width:1100px )" srcset="images/massaleft-200.png" type="image/png">
+        <img src="images/massaleft-200.png" alt="Luciano">
+     </picture>
+</div>
+   <main>
+      <div>
+         <h1>Descubra qual o valor pago no Litro da sua bebida</h1>
+         <label for="volume">Insira o volume: </label>
+         <input type="number" name="volume" id="volume" placeholder="  L / mL"><br>
+         <label for="price">Insira o valor :</label>
+         <input type="number" name="price" id="price" placeholder="  R$"><br>
+         <div class="wrap">
+            <button class="button">Converter</button>
+          </div>
+          <div id="answer">
+
+          </div>
+      </div>
+      
+   </main>
+   <footer>
+      <p>Idealização "O MASSA" <br> Desenvolvido por &copy; 9Devs Technology Co.</p>
+   </footer>
+</body>
+<script src="script/mascaras.js"></script>
+<script src="script/converter.js"></script>
+</html>
